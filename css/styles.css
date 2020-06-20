@@ -122,8 +122,18 @@ body {
 }
 .contacts-display-li {
   width: calc((100% - 50px) / 2);
-  margin-right: 50px;
-  display: flex;
+  margin-right: 30px;
+  display: inline-flex;
+}
+.svg-item-envelope {
+  width: 15px;
+  height: 15px;
+  fill: var(--primary-text-color);
+}
+.svg-item-telephone {
+  width: 15px;
+  height: 15px;
+  fill: var(--primary-text-color);
 }
 .contacts-display-li:last-child {
   margin-right: 0;
