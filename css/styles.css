@@ -70,7 +70,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  text-decoration: none;
 }
 
 
@@ -80,10 +79,7 @@ body {
 .item-nav {
   display: flex;
   padding: 0;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  margin-left: 85px;
+  margin: 0 0 0 85px;
   list-style: none;
   text-decoration: none;
 }
@@ -97,7 +93,7 @@ body {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  /* color: var(--accent-color); */
+  color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -111,19 +107,15 @@ body {
 .item-nav .link:focus {
   color: var(--accent-color);
 }
-.svg-item-envelope {
-  margin-right: 10px;
-}
 
-.svg-item-telephone{
-  margin-right: 10px;
-}
 .contacts-display-li .contacts:hover,
 .contacts-display-li .contacts:focus {
   color: var(--accent-color);
 }
 .contacts-display-li .contacts {
   text-decoration: none;
+  display: block;
+  color: var(--primary-text-color)
 }
 .contacts-display {
   display: flex;
@@ -133,30 +125,37 @@ body {
   /* width: calc((100% - 50px) / 2); */
   margin-right: 30px;
   display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contacts-display-li:last-child {
+  margin-right: 0;
 }
 .svg-item-envelope {
   width: 15px;
   height: 15px;
   fill: var(--primary-text-color);
+  margin-right: 10px;
 }
 .svg-item-telephone {
   width: 15px;
   height: 15px;
   fill: var(--primary-text-color);
+  margin-right: 10px;
 }
-.contacts-display-li:last-child {
-  margin-right: 0;
+.contacts-display-li .svg-item-envelope:hover,
+.contacts-display-li .svg-item-telephone:hover {
+  fill: var(--accent-color)
 }
-.contacts-display .contacts {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-}
+
+
 /* Hero */
 .section.hero {
   text-align: center;
   min-height: 600px;
-  max-width: 1600px;
+  max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--secondary-background-color);
@@ -339,7 +338,7 @@ body {
 }
 
 .social-links:hover {
-  background-color: blue;
+  background-color: var(--accent-color);
   /* list-style: none; */
   text-decoration: none;
 }
