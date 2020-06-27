@@ -114,7 +114,8 @@ body {
 }
 .contacts-display-li .contacts {
   text-decoration: none;
-  display: block;
+  display: inline-flex;
+  /* display: block; */
   color: var(--primary-text-color)
 }
 .contacts-display {
@@ -148,6 +149,9 @@ body {
 .contacts:hover .svg-item-envelope,
 .contacts:hover .svg-item-telephone {
   fill: var(--accent-color)
+}
+.contacts {
+  
 }
 
 
@@ -385,8 +389,8 @@ body {
 .svg-item-clients {
   fill: #afb1b8;
 }
-.our-usual-client-li:hover .svg-item-clients,
-.our-usual-client-li:focus .svg-item-clients {
+.our-usual-client-link:hover .svg-item-clients,
+.our-usual-client-link:focus .svg-item-clients {
   fill: var(--accent-color)
   }
 
